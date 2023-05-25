@@ -1,0 +1,570 @@
+//Calculator
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int chose;
+float sum,num1,num2;
+int main()
+
+{   printf("1.add +:\n");
+    printf("2.balance -:\n");
+    printf("3.mutipale *:\n");
+    printf("4.discribe /:\n");
+
+
+    printf("chose a number for operator:");
+    scanf("%d",&chose);
+
+
+
+    printf("\nEnter first number:");
+    scanf("%f",&num1);
+
+    printf("Enter second number:");
+    scanf("%f",&num2);
+
+    switch(chose){
+    case 1:
+        sum=num1+num2;
+        printf("\nsum = %f",sum);
+        break;
+      case 2:
+        sum=num1-num2;
+        printf("\n = %f",sum);
+        break;
+       case 3:
+        sum=num1*num2;
+        printf("\nsum = %f",sum);
+        break;
+        case 4:
+        sum=num1/num2;
+        printf("\nsum = %f",sum);
+        break;
+    }
+    return 0;
+}
+
+
+
+
+//values print
+
+#include <stdio.h>
+
+void main () //we don't need to put return value if we use void main()
+{
+/* Declaring and defining i as an integer, initializing with 5 */
+int i = 5;
+printf("The integer value is: %d \n", i); // print the value
+/* Declaring and defining the c as a character, initializing with 'b' */
+char c = 'b';
+printf("The character value is: %c \n", c); // print the value
+/* Declaring and defining the f as a float, initializing with 7.2357 */
+float f = 7.2357;
+printf("The float value is: %.2f \n", f); // print the value
+/* Declaring and defining the d as a double, initializing with '71.2357455' */
+double d = 71.2357455;
+printf("The double value is: %lf \n", d); // print the value
+
+
+
+
+
+*hours & payrate
+
+#include <stdio.h>
+
+int main()
+{
+// Create the Hours & Payrate variables with int and float datatypes
+    float Payrate;
+    int Hours;
+// Ask the user to enter Character type of data
+    printf("Enter Your total worked hours: ");
+// Get and save the data from the user entered.
+    scanf("%d", &Hours);
+// Ask the user to enter integer type of data
+    printf("Enter Your Pay rates: ");
+// Get and save the number from the user entered.
+    scanf("%f", &Payrate);
+// Print the name and number from the user entered data.
+    printf("Your Payrate and Worked Hours is: %.1f %d", Payrate,Hours);
+    return 0;
+}
+
+
+
+*print a name
+
+#include <stdio.h>
+
+int main()
+{
+    //variable diclartaion
+    char firstname[20];
+    char lastname[20];
+    int year;
+
+    printf("What is your firstname ? ");
+    scanf("%s",&firstname);
+
+    printf("What is your lastname ? ");
+    scanf("%s",&lastname);
+
+    printf("What is your birth year ? ");
+    scanf("%d",&year);
+
+    printf("%s %s was born in %d",firstname,lastname,year);
+
+    return(0);
+}
+
+
+
+*Calculate retangle area
+
+#include <stdio.h>
+int main()
+{
+    //float area;
+    //float length;
+    //float width;
+    float area,width,length;
+
+    printf("Enter Length of Rectangle = ");
+    scanf("%f",&length);
+
+    printf("\nEnter Width of Rectangle =  ");
+    scanf("%f",&width);
+
+    area = length * width;
+
+    printf("\nRectangle Area = %.4f",area);
+
+    return 0;
+
+}
+
+*star marks
+#include <stdio.h>
+int main()
+{
+   printf("Out put 1\n");
+   printf("*\n");
+   printf("**\n");
+   printf("***\n");
+   printf("****\n");
+   printf("*****\n");
+   printf("******\n");
+   printf("*****\n");
+   printf("****\n");
+   printf("***\n");
+   printf("**\n");
+   printf("*\n\n\n");
+
+   printf("Out put 2\n");
+   printf("     *\n");
+   printf("    **\n");
+   printf("   ****\n");
+   printf("  ******\n");
+   printf(" ********\n");
+   printf("**********\n");
+   printf(" ********\n");
+   printf("  ******\n");
+   printf("   ****\n");
+   printf("    **\n");
+   printf("     *\n");
+
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+int x, y, result,sum;
+printf("\n Input the first integer: ");
+scanf("%d", &x);
+printf("\n Input the second integer: ");
+scanf("%d", &y);
+result = x * y;
+sum=x+y;
+printf("Product of the above two integers = %d\n", result);
+printf("sum of the above two integers = %d\n", sum);
+}
+
+
+//fual consumshan 
+#include <stdio.h>
+
+int main()
+{
+    int   distance;
+    float liters;
+    float avg;
+
+    printf("Enter Traveled Distance in Km = ");
+    scanf("%d",&distance);
+
+    printf("Enter spent fuel in liters = ");
+    scanf("%f",&liters);
+
+    avg = distance / liters;
+
+    printf("Your Bike average fuel consumption is = %.2f ",avg);
+
+    return 0;
+
+
+}
+
+*operater
+#include <stdio.h>
+int main()
+{
+int a = 5, c;
+
+c = a; // c is 5
+printf("c = %d\n", c);
+
+c += a; // c is 10 c=c+a
+printf("c = %d\n", c);
+
+c -= a; // c is 5 c=c-a
+printf("c = %d\n", c);
+
+c *= a; // c is 25 c=c*a
+printf("c = %d\n", c);
+
+c /= a; // c is 5 c=c/a
+printf("c = %d\n", c);
+
+c %= a; // c = 0
+printf("c = %d\n", c);
+
+return 0;
+}
+
+//over 18 under18
+#include <stdio.h>
+
+int main()
+{
+    int age;
+
+    // user enter their age
+    printf("Please enter your age: ");
+
+    // store the user's answer in the variable
+    scanf("%i", &age);
+
+    if (age < 18) {
+    printf("You need to be over 18 years old to continue\n");
+    }
+    if (age > 18) {
+    printf("You are over 18 so you can continue \n");
+    }
+
+    return 0;
+}
+
+//greater than 5
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+
+    if (a >5)
+    printf("a is greater than 5\n");
+
+    else
+    printf("a is lesser than 5 \n");
+
+    return 0;
+}
+
+
+
+//user 3 inputs max min
+#include <stdio.h>
+
+int main()
+{
+    int x,y,z,max;
+
+    printf("Enter x,y,z :");
+    scanf("%d %d %d",&x, &y, &z);
+
+    if(x>y && x>z){
+        printf("X is max");
+    }
+    if(y>z){
+        printf("Y is max");
+    }
+    if(z>y){
+        printf("z is max");
+    }
+
+    return 0;
+}
+
+*Marks Fail or pass
+#include <stdio.h>
+
+int main()
+{
+    int mark;
+
+    printf("Enter Your Mark :");
+    scanf("%d",&mark);
+
+    if (mark >= 60 ){
+        printf("You are Passed\n");
+    }
+    if (mark < 60){
+        printf("You are Failed\n");
+    }
+
+    return 0;
+}
+
+
+#include <stdio.h>
+
+int main()
+{
+    int number;
+
+    printf("enter a number:");
+    scanf("%d",&number);
+
+    if(number==10){
+    printf("number is equals to 10");
+    }
+    else if(number==50){
+    printf("number is equal to 50");
+    }
+    else if(number==100){
+    printf("number is equal to 100");
+    }
+    else{
+    printf("number is not equal to 10, 50 or 100");
+    }
+
+
+return 0;
+}
+
+//min max
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, num3;
+
+    printf("Enter three numbers:");
+    scanf("%d %d %d",&num1, &num2, &num3);
+
+    if(num1>num2){
+    /* This is nested if-else */
+    if(num1>num3){
+    printf("\nsmallest = %d", num3);
+    }
+    else{
+    printf("smallest = %d", num1);
+    }
+    }
+
+    else{
+    /* This is nested if-else */
+    if(num2>num3){
+    printf("smallest = %d", num3);
+    }
+    else{
+    printf("smallest = %d", num2);
+    }
+    }
+    return(0);
+}
+
+//grading
+#include <stdio.h>
+
+int main(){
+
+    int mark;
+
+    printf("Enter your Mark : ");
+    scanf("%d",&mark);
+
+    if ((70 <= mark) && (mark<=100) ){
+        printf("Your Grade is A");
+    }
+    else if ((55 <= mark) && (mark<=69)){
+        printf("Your Grade is B");
+    }
+    else if ((40 <= mark) && (mark<= 54)){
+        printf("Your Grade is C");
+    }
+    else if ((30 <= mark) && (mark<= 39)){
+        printf("Your Grade is D");
+    }
+    else if ((29 <= mark) && (mark <= 0)){
+        printf("Your Grade is E");
+    }
+    else {
+        printf("Invalid Mark");
+    }
+
+return 0;
+}
+
+*array
+#include <stdio.h>
+void print(char array[]);
+
+int main()
+{
+    char letters[] = {'A','B','C','D','E','F','G','H','I','J'};
+
+    print(letters);
+
+    return 0;
+}
+
+void print(char array[])
+{
+    int i;
+    for(i=0; i<10; i++){         //for(i=0; array[i]!='\0'; i++)
+        printf("%c ",array[i]);
+    }
+
+}
+
+
+*file handling
+#include <stdio.h>
+#define FILE_NAME "text.txt"
+
+int main()
+{
+    //FILE *file_ptr = fopen(FILE_NAME, "w");
+
+    FILE *file_ptr = fopen("test.txt","w");
+    //FILE *file_ptr = fopen("test.txt","w+");
+    //FILE *file_ptr = fopen("test.txt","r");
+    //FILE *file_ptr = fopen("test.txt","r+");
+    //FILE *file_ptr = fopen("test.txt","a");
+    //FILE *file_ptr = fopen("test.txt","a+");
+
+    if(file_ptr != NULL){
+        printf("File open Success\n");
+    }
+    else{
+        printf("File open Unsuccess\n");
+    }
+
+    fclose(file_ptr);
+
+
+    return 0;
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *test;
+
+
+    test = fopen("testing.txt","w");
+
+    if(test != NULL){
+        printf("File open success\n");
+    }
+    else{
+        printf("File open unsuccess\n");
+    }
+
+    fprintf(test, "Hello,\n");
+    fprintf(test, "Welcome to SWT11022 \nThis is available in the first-year, first semester.");
+
+
+    fclose(test);
+
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *ptr;
+    char ch;
+    char str[40];
+    int count = 1;
+    int vowel = 1;
+
+    //a. Create a new file to save about yourself.
+    ptr = fopen("Myself.txt","w+");
+
+
+    //b. Insert a few details of yourself into the file.
+    fputs("My Name is Ranathunga K J\n",ptr);
+    fputs("I'm 24 Years old \n",ptr);
+    fputs("I live in Matara\n",ptr);
+    fputs("I study at southeastern University of Sri Lanka\n",ptr);
+
+    //c. Insert * as the last character in the file.
+    fputc('*',ptr);
+
+
+    //d. Print initial 20 characters in the console.
+    rewind(ptr);//pointer goes to top of page
+
+    /*for(int i = 0; i<20; i++){
+        ch = fgetc(ptr);
+        printf("%c",ch);
+    }*/
+
+    fgets(str, 21, ptr);//1 character for null value
+    printf("Initial 20 characters :%s\n",str);
+
+
+    //e. Count the number of characters in the file.
+    rewind(ptr);
+    while((ch = fgetc(ptr)) != EOF){
+        count++;
+    }
+    printf("The Number of characters in the file :%d\n",count);
+
+
+    /*fseek(ptr, 0, SEEK_END);
+    printf("The Number of characters in the file :%d\n",ftell(ptr));*/
+
+
+    //f. Display the vowel count in the file.
+    rewind(ptr);
+    while(!feof(ptr)){
+        ch = getc(ptr);
+        if(ch == 'a' || ch =='e' || ch == 'i' || ch == 'o' || ch =='u'){
+            vowel++;
+        }
+        else if(ch == 'A' || ch =='E' || ch == 'I' || ch == 'O' || ch =='U'){
+            vowel++;
+        }
+    }
+    printf("Vowel Count :%d\n",vowel);
+
+
+    fclose(ptr);
+
+
+
+    return 0;
+}
